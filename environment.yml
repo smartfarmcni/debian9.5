@@ -6,6 +6,7 @@ name: consumption-env
 dependencies:
 
   - python=3.6.2        # rpi 3.6.3,   installed from rpi
+  - openblas
   - pandas=0.20.3       # rpi 0.21.0,  installed from rpi
   - scikit-learn=0.19.0 # rpi 0.19.1,  installed from rpi
   - numpy=1.13.1        # rpi 1.13.3,  installed from rpi
