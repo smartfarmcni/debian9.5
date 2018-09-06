@@ -3,7 +3,7 @@ FROM debian:9.5
 ADD ./environment.yml .
 
 RUN apt-get update
-RUN apt-get install -y libopenblas libboost-python-dev libsuperlu5
+RUN apt-get install -y libopenblas-base libopenblas-dev libboost-python-dev libsuperlu5
 RUN apt-get install -y build-essential gfortran qttools5-dev qt5-default 
 RUN apt-get install -y cmake git curl bzip2 redis-server libpqxx-dev libboost-test-dev
 RUN apt-get install -y libyaml-cpp-dev libboost-dev libblas-dev liblapack-dev
