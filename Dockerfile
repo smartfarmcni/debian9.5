@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     cmake git curl bzip2 redis-server libpqxx-dev libboost-test-dev \
     libyaml-cpp-dev libboost-dev libblas-dev liblapack-dev \
     postgresql-9.6 openjdk-8-jre-headless \
+    python3-psycopg2 python3-redis python3-ruamel.yaml python3-psutil \
     socat \
     && apt-get clean
 RUN git clone --recursive --branch 3.5.4 https://github.com/Cylix/cpp_redis.git && \
